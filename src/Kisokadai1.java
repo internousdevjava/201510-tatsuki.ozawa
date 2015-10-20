@@ -4,18 +4,18 @@ import java.io.InputStreamReader;
 public class Kisokadai1 {
 	public static void main(String args[]) 
 	{
-		System.out.println("‹ã‹ã‚Ì•\");
+		System.out.println("ä¹ä¹ã®è¡¨");
 
 		int x;
 
-		System.out.print("x‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢: ");
+		System.out.print("Xã‚’å…¥åŠ›ã—ã¦ãã ã•ã„: ");
 		InputStreamReader xxx = new InputStreamReader(System.in);
 		BufferedReader isrx = new BufferedReader(xxx);
 		try {
 			String bufx = isrx.readLine();
 			x = Integer.parseInt(bufx);
 			if (x> 100 || x< 1) {
-				System.out.println("–³Œø‚È“ü—Í");
+				System.out.println("ç„¡åŠ¹ãªå…¥åŠ›");
 				{
 					return;
 				}
@@ -24,14 +24,14 @@ public class Kisokadai1 {
 			x = 0;
 		}
 		int y;
-		System.out.print("y‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢: ");
+		System.out.print("Yã‚’å…¥åŠ›ã—ã¦ãã ã•ã„: ");
 		InputStreamReader yyy = new InputStreamReader(System.in);
 		BufferedReader isry = new BufferedReader(yyy);
 		try {
 			String bufy = isry.readLine();
 			y = Integer.parseInt(bufy);
 			if (y > 100 || y< 1) {
-				System.out.println("–³Œø‚È“ü—Í");
+				System.out.println("ç„¡åŠ¹ãªå…¥åŠ›ã§ã™");
 				{
 					return;
 				}
@@ -40,17 +40,14 @@ public class Kisokadai1 {
 			y = 0;
 		}
 
-		 // ”z—ñ‚ÌéŒ¾B
 	    int kuku[][] = new int[y][x];
 
-	    // ‹ã‹ã‚ÌŒ‹‰Ê‚ð”z—ñ‚É•Û‘¶B
 	    for( int i=y; i>=1; i-- ) {
 	      for( int j=0; j<x; j++ ){
 	    	  kuku[i-1][j] = i * (j+1);
 	      }
 	    }
 
-	    // ‹ã‹ã‚ÌŒ‹‰Ê‚ð•\Ž¦B
 	    for( int i=y; i>=1; i-- ) {
 	      for( int j=0; j<x; j++ ) { 
 	    	  System.out.print(kuku[i-1][j] + " "); 

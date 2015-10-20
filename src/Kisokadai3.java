@@ -13,9 +13,9 @@ public class Kisokadai3 {
 
 		int cmd;
 		while (true) {
-			System.out.println("ƒƒjƒ…[");
-			System.out.println("ƒRƒ}ƒ“ƒh‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
-			System.out.println("1.ì¬ŠJ‚­@2.I—¹");
+			System.out.println("ãƒ¡ãƒ‹ãƒ¥ãƒ¼");
+			System.out.println("ã‚³ãƒãƒ³ãƒ‰å…¥åŠ›");
+			System.out.println("1.ä½œæˆ+é–‹ã2.çµ‚äº†");
 			InputStreamReader isr = new InputStreamReader(System.in);
 			BufferedReader br = new BufferedReader(isr);
 			try {
@@ -24,9 +24,9 @@ public class Kisokadai3 {
 				switch (cmd) {
 				case 1:
 					
-					System.out.println("<V‹Kì¬/ŠJ‚­>");
-					System.out.println("ƒtƒ@ƒCƒ‹‚Ì–¼‘O‚ğ“ü‚ê‚Ä‚­‚¾‚³‚¢:");
-					System.out.println("—á:c:\\Users\\internous\\ƒtƒ@ƒCƒ‹–¼.txt");
+					System.out.println("<æ–°è¦ä½œæˆ/é–‹ã>");
+					System.out.println("ä»¥ä¸‹ã®ä¾‹ã«ç¿’ã£ã¦ãƒ•ã‚¡ã‚¤ãƒ«åã‚’å…¥ã‚Œã¦ãã ã•ã„:");
+					System.out.println("ä¾‹:c:\\Users\\internous\\ãƒ•ã‚¡ã‚¤ãƒ«å.txt");
 					String fln = br.readLine();
 					
 					File newfile = new File(fln);
@@ -34,45 +34,45 @@ public class Kisokadai3 {
 					File dir = new File(newfile.getParent());
 
 					if (!dir.exists()) {
-						System.out.println("ƒtƒHƒ‹ƒ_‚ª‚ ‚è‚Ü‚¹‚ñB:" + newfile.getAbsolutePath());
+						System.out.println("ãƒ•ã‚©ãƒ«ãƒ€ãŒã‚ã‚Šã¾ã›ã‚“" + newfile.getPath());
 						dir.mkdirs();
-						System.out.println("ì¬¬Œ÷");
+						System.out.println("ãƒ•ã‚©ãƒ«ãƒ€ã‚’ä½œæˆã—ã¾ã—ãŸ");
 					}
 					try {
 						if (newfile.createNewFile()) {
-							System.out.println(fln + "ƒtƒ@ƒCƒ‹‚Ìì¬‚É¬Œ÷‚µ‚Ü‚µ‚½B");
+							System.out.println(fln + "ãƒ•ã‚¡ã‚¤ãƒ«ã®ä½œæˆã«æˆåŠŸã—ã¾ã—ãŸ");
 						} else {
-							System.out.println(fln + "ƒtƒ@ƒCƒ‹‚ğŠJ‚«‚Ü‚µ‚½");
+							System.out.println(fln + "ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ãã¾ã—ãŸ");
 
 						}
 						
-						System.out.println("<•ÒWƒ‚[ƒh>");
-						System.out.println("1:‘‚«‚İ,2:“Ç‚İ‚İ,3:ƒƒCƒ“ƒƒjƒ…[‚Ö");
+						System.out.println("<ç·¨é›†ãƒ¢ãƒ¼ãƒ‰>");
+						System.out.println("1:æ›¸ãè¾¼ã¿,2:èª­ã¿è¾¼ã¿3.ãƒ¡ã‚¤ãƒ³ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã¸");
 						try {
 							buf = br.readLine();
 							cmd = Integer.parseInt(buf);
 						} catch (Exception e) {
-							System.out.println("—áŠO‚ª”­¶‚µ‚Ü‚µ‚½B");
+							System.out.println("æ•°å­—ä»¥å¤–ãŒå…¥ã£ã¦ã„ã¾ã™");
 							System.out.println(e);
 							continue;
 						}
 						switch (cmd) {
 						
 						case 1:
-							System.out.println("<‘‚«‚İƒ‚[ƒh >");
-							System.out.println("[1]ã‘‚«,[2]’Ç‹L,[3]ƒƒCƒ“ƒƒjƒ…[‚Ö");
+							System.out.println("<æ›¸ãè¾¼ã¿ãƒ¢ãƒ¼ãƒ‰>");
+							System.out.println("[1]ä¸Šæ›¸ã,[2]è¿½è¨˜,[3]ãƒ¡ã‚¤ãƒ³ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã¸");
 							try {
 								buf = br.readLine();
 								cmd = Integer.parseInt(buf);
 							} catch (Exception e) {
-								System.out.println("¦”šˆÈŠO‚ª“ü‚Á‚Ä‚¢‚Ü‚·");
+								System.out.println("æ•°å­—ä»¥å¤–ãŒå…¥ã£ã¦ã„ã¾ã™");
 								continue;
 							}
 							switch (cmd) {
 							case 1:
 								
-								System.out.println("<ã‘‚«ƒ‚[ƒh>");
-								System.out.println("•¶š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢«");
+								System.out.println("ä¸Šæ›¸ããƒ¢ãƒ¼ãƒ‰");
+								System.out.println("æ–‡å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
 								String text = br.readLine();
 								try {
 									PrintWriter pw = new PrintWriter(new BufferedWriter(
@@ -81,17 +81,17 @@ public class Kisokadai3 {
 									pw.println(text);
 									pw.close();
 								} catch (IOException e) {
-									System.out.println("ƒGƒ‰[");
+									System.out.println("ã‚¨ãƒ©ãƒ¼ã§ã™");
 								}
 								continue;
 						
 						case 2:
 							
-							System.out.println("’Ç‹L");
+							System.out.println("è¿½è¨˜ãƒ¢ãƒ¼ãƒ‰");
 							text = br.readLine();
 							try {
 								FileWriter filewriter = new FileWriter(fln,true);
-								System.out.println("’Ç‹L‚µ‚Ü‚·");
+								System.out.println("æ–‡å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
 								filewriter.write(text);
 								filewriter.close();
 							} catch (FileNotFoundException e) {
@@ -103,14 +103,14 @@ public class Kisokadai3 {
 					continue;
 					
 				default:
-					System.out.println("1`3‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+					System.out.println("ï¼‘ã‹ã‚‰3ã¾ã§ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
 					continue;
 				}
 				
 			
 			case 2:
 				
-				System.out.println("“Ç‚İ‚İ");
+				System.out.println("èª­ã¿è¾¼ã¿ãƒ¢ãƒ¼ãƒ‰");
 				try {
 					FileReader filereader = new FileReader(fln);
 
@@ -130,7 +130,7 @@ public class Kisokadai3 {
 				continue;
 
 			default:
-				System.out.println("1`3‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+				System.out.println("1ã‹ã‚‰3ã¾ã§ã®æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
 				continue;
 			}
 
@@ -140,14 +140,14 @@ public class Kisokadai3 {
 		continue;
 	case 2:
 		
-		System.out.println("I—¹‚µ‚Ü‚·");
+		System.out.println("çµ‚äº†ã—ã¾ã™");
 		return;
 	default:
-		System.out.println("1`2‚Ì”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+		System.out.println("1ã‹ã‚‰2ã¾ã§ã®æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
 		continue;
 	}
 } catch (Exception e) {
-	System.out.println("”šˆÈŠO‚ª“ü—Í‚³‚ê‚Ä‚Ü‚·");
+	System.out.println("æ•°å­—ä»¥å¤–ãŒå…¥åŠ›ã•ã‚Œã¦ã„ã¾ã™");
 	continue;
 	
 }

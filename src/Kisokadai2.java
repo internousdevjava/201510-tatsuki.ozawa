@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Kisokadai2 {
 	public static void main(String[] args) {
-		System.out.print("”šƒQ[ƒ€");
+		System.out.print("æ•°å­—ã‚²ãƒ¼ãƒ ");
 		
 		int useranswer;
 		Random rnd = new Random();
@@ -12,7 +12,7 @@ public class Kisokadai2 {
 		int ran = rnd.nextInt(100) + 1;
 		
 		while (true) {
-			System.out.print("1‚©‚ç‚P‚O‚O‚Ü‚Å‚Ì”š‚ğ“ü—Í");
+			System.out.print("1ã‹ã‚‰100ã¾ã§ã®æ•°å­—ã‚’å…¥åŠ›");
 			InputStreamReader isr = new InputStreamReader(System.in);
 			BufferedReader br = new BufferedReader(isr);
 
@@ -20,20 +20,20 @@ public class Kisokadai2 {
 				String buf= br.readLine();
 				useranswer = Integer.parseInt(buf);
 				if (useranswer > 100 || useranswer < 1) {
-					System.out.println("¦1`100‚Ü‚Å‚Ì”š‚Å‚¨Šè‚¢‚µ‚Ü‚·");
+					System.out.println("â€»1ã‹ã‚‰100ã¾ã§ã®æ•°å­—ã§ãŠé¡˜ã„ã—ã¾ã™");
 					continue;
 				}
 			} catch (Exception e) {
-				System.out.println("¦”šˆÈŠO‚ª“ü‚Á‚Ä‚¢‚Ü‚·");
+				System.out.println("æ•°å­—ä»¥å¤–ãŒå…¥ã£ã¦ã„ã¾ã™");
 				continue;
 			}
 			if (useranswer > ran) {
-				System.out.println("³‰ğ‚Í‚»‚ê‚æ‚è¬‚³‚¢”‚Å‚·");
+				System.out.println("æ­£è§£ã¯ãã‚Œã‚ˆã‚Šå°ã•ã„æ•°å­—ã§ã™");
 				continue;
 			} else if (useranswer < ran) {
-				System.out.println("³‰ğ‚Í‚»‚ê‚æ‚è‘å‚«‚¢”‚Å‚·");
+				System.out.println("æ­£è§£ã¯ãã‚Œã‚ˆã‚Šå¤§ãã„æ•°å­—ã§ã™");
 			} else {
-				System.out.println("³‰ğ‚Å‚·I‚¨‚ß‚Å‚Æ‚¤");
+				System.out.println("æ­£è§£ã§ã™");
 				break;
 			}
 		}
