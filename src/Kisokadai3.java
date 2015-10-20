@@ -46,7 +46,7 @@ public class Kisokadai3 {
 
 						}
 						
-						System.out.println("<編集モード> [" + fln + "]");
+						System.out.println("<編集モード>");
 						System.out.println("1:書き込み,2:読み込み,3:メインメニューへ");
 						try {
 							buf = br.readLine();
@@ -59,7 +59,7 @@ public class Kisokadai3 {
 						switch (cmd) {
 						
 						case 1:
-							System.out.println("<書き込みモード > ["+ fln + "]");
+							System.out.println("<書き込みモード >");
 							System.out.println("[1]上書き,[2]追記,[3]メインメニューへ");
 							try {
 								buf = br.readLine();
