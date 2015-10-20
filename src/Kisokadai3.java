@@ -77,7 +77,7 @@ public class Kisokadai3 {
 								try {
 									PrintWriter pw = new PrintWriter(new BufferedWriter(
 											new FileWriter(fln)));
-									System.out.println(fln);
+									System.out.println("上書きしました");
 									pw.println(text);
 									pw.close();
 								} catch (IOException e) {
@@ -91,7 +91,7 @@ public class Kisokadai3 {
 							text = br.readLine();
 							try {
 								FileWriter filewriter = new FileWriter(fln,true);
-								System.out.println("文字を入力してください");
+								System.out.println("追記しました");
 								filewriter.write(text);
 								filewriter.close();
 							} catch (FileNotFoundException e) {
