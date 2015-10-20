@@ -25,7 +25,7 @@ public class Kisokadai3 {
 				case 1:
 					
 					System.out.println("<新規作成/開く>");
-					System.out.println("以下の例に習ってファイル名を入れてください:");
+					System.out.println("以下の例に習ってパスとファイル名を入れてください:");
 					System.out.println("例:c:\\Users\\internous\\ファイル名.txt");
 					String fln = br.readLine();
 					
